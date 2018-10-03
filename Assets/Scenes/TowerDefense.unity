@@ -3665,34 +3665,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e7c0055265f2d9941973aa3d0506a496, type: 3}
---- !u!1 &720353479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 720353481}
-  m_Layer: 0
-  m_Name: GroundPlacementController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &720353481
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 720353479}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07884616, y: 0.9549973, z: -2.5951996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &730042079
 Prefab:
   m_ObjectHideFlags: 0
@@ -6630,6 +6602,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278111510}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1298298191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298298192}
+  m_Layer: 0
+  m_Name: GroundPlacementController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298298192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298298191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07884616, y: 0.9549973, z: -2.5951996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1300128774
 Prefab:
   m_ObjectHideFlags: 0
@@ -8617,7 +8617,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4968161590034772, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4968161590034772, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8625,7 +8625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4968161590034772, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4968161590034772, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9488,7 +9488,7 @@ GameObject:
   - component: {fileID: 1936394090}
   - component: {fileID: 1936394089}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
