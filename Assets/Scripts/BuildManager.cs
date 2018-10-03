@@ -16,9 +16,27 @@ public class BuildManager : MonoBehaviour {
 
     public GameObject standardTurretPrefab;
 
+    private void Update()
+    {
+
+        if (turretToBuild != null)
+        {
+            MoveTurretToCamera();
+        }
+
+      
+    }
+
+ private void MoveTurretToCamera()
+        {
+            standardTurretPrefab.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 5;
+        }
+
+
     void Start()
     {
-        turretToBuild = standardTurretPrefab;
+       
+            turretToBuild = standardTurretPrefab;
     }
 
     private GameObject turretToBuild;
