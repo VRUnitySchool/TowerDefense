@@ -16,23 +16,6 @@ public class BuildManager : MonoBehaviour {
 
     public GameObject standardTurretPrefab;
 
-    private void Update()
-    {
-
-        if (turretToBuild != null)
-        {
-            MoveTurretToCamera();
-        }
-
-      
-    }
-
- private void MoveTurretToCamera()
-        {
-            standardTurretPrefab.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 5;
-        }
-
-
     void Start()
     {
        
@@ -44,6 +27,12 @@ public class BuildManager : MonoBehaviour {
     public GameObject GetTurretToBuild ()
     {
         return turretToBuild;
+    }
+
+    void Test()
+    {
+        Debug.LogError("More than one BuildManager in scene");
+        return;
     }
 
 }
