@@ -906,7 +906,6 @@ GameObject:
   - component: {fileID: 115554535}
   - component: {fileID: 115554536}
   - component: {fileID: 115554534}
-  - component: {fileID: 115554531}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -927,19 +926,6 @@ Transform:
   m_Father: {fileID: 1480993239}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &115554531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115554529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabd4900815bdf044ba4881007a83e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placeableObjectPrefab: {fileID: 0}
-  newObjectHotKey: 97
 --- !u!114 &115554534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,7 +955,7 @@ MonoBehaviour:
   maximumLength: 100
   scaleFactor: 0.002
   cursorScaleMultiplier: 25
-  cursorMatchTargetRotation: 0
+  cursorMatchTargetRotation: 1
   cursorDistanceRescale: 0
   maximumCursorScale: {x: Infinity, y: Infinity, z: Infinity}
   customTracer: {fileID: 0}
