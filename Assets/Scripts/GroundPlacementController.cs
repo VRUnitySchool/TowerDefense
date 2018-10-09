@@ -2,8 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR;
 
 public class GroundPlacementController : MonoBehaviour {
+
+    public bool triggerPressed;
 
     [SerializeField]
     private GameObject placeableObjectPrefab;
@@ -42,10 +45,13 @@ public class GroundPlacementController : MonoBehaviour {
         }
     }
 
+
+    
+
     private void HandleNewObjectHotKey()
 
     {
-        if  (Input.GetKeyDown(newObjectHotKey))
+        if (triggerPressed)
             if (currentPlaceableObject == null)
             {
                 currentPlaceableObject = Instantiate(placeableObjectPrefab);
@@ -54,5 +60,5 @@ public class GroundPlacementController : MonoBehaviour {
             {
                 Destroy(currentPlaceableObject);
             }
-        }
+    }
 }
