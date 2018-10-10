@@ -5,33 +5,38 @@ public class Node : MonoBehaviour {
 
     public Vector3 positionOffset;
     private GameObject turret;
-    public bool triggerPressed;
+    private float trigger;
+    private bool check;
 
-    private void Start()
+
+    void Update()
     {
-        if (GetComponent<VRTK_ControllerEvents>() == null)
+
+        trigger = Input.GetAxis("VRTriggerPressed");
+
+        if (trigger <= .1)
         {
-            VRTK_Logger.Error(VRTK_Logger.GetCommonMessage(VRTK_Logger.CommonMessageKeys.REQUIRED_COMPONENT_MISSING_FROM_GAMEOBJECT, "VRTK_ControllerEvents_ListenerExample", "VRTK_ControllerEvents", "the same"));
-            return;
+            check = false;
         }
 
-        GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerPressed);
-    }
 
-    private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
-    {
-        Debug.Log("Worked");
-    }
 
-    void OnMouseDown()
-    {
-        if (turret != null)
+
+        if (trigger >= .99)
         {
-            Debug.Log("Can't Build There");
-            return;
+            check = false;
+            if (turret != null)
+            {
+                Debug.Log("Can't Build There");
+                return;
+            }
+            if (check == false)
+            {
+             GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+             check = true;
+            }
+           
         }
-
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
     }
 }
