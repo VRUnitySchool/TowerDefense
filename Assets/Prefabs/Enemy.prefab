@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4668398419970816}
   - component: {fileID: 33291290642127294}
   - component: {fileID: 23342347240542702}
-  - component: {fileID: 135838978314752922}
   - component: {fileID: 114137884327403036}
   m_Layer: 0
   m_Name: Enemy
@@ -96,16 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cebb85062b77742b3d7d050a50fc1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
---- !u!135 &135838978314752922
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1697560615202494}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  speed: 3.5

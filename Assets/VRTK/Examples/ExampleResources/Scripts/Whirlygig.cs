@@ -11,6 +11,7 @@
         {
             base.StartUsing(usingObject);
             spinSpeed = 360f;
+            Debug.Log("NodeUI");
         }
 
         public override void StopUsing(VRTK_InteractUse usingObject)
