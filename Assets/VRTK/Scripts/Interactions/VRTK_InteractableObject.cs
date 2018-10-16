@@ -8,6 +8,7 @@ namespace VRTK
     using Highlighters;
     using GrabAttachMechanics;
     using SecondaryControllerGrabActions;
+    using UnityEngine.UI;
 
     /// <summary>
     /// Event Payload
@@ -16,8 +17,10 @@ namespace VRTK
     public struct InteractableObjectEventArgs
     {
         public GameObject interactingObject;
-    }
+        
 
+        
+    }
     /// <summary>
     /// Event Payload
     /// </summary>
@@ -368,18 +371,23 @@ namespace VRTK
             StopTouching((previousTouchingObject != null ? previousTouchingObject.GetComponent<VRTK_InteractTouch>() : null));
         }
 
+        
         /// <summary>
         /// The StopTouching method is called automatically when the object has stopped being touched. It is also a virtual method to allow for overriding in inherited classes.
         /// </summary>
         /// <param name="previousTouchingObject">The object that was previously touching this object.</param>
         public virtual void StopTouching(VRTK_InteractTouch previousTouchingObject = null)
         {
+            GameObject cube;
+
             GameObject previousTouchingGameObject = (previousTouchingObject != null ? previousTouchingObject.gameObject : null);
             if (previousTouchingGameObject != null && touchingObjects.Contains(previousTouchingGameObject))
             {
                 ResetUseState(previousTouchingGameObject);
                 OnInteractableObjectUntouched(SetInteractableObjectEvent(previousTouchingGameObject));
                 touchingObjects.Remove(previousTouchingGameObject);
+                Debug.Log("Working");
+
             }
         }
 
