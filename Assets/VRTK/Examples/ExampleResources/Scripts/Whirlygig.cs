@@ -5,7 +5,6 @@
     public class Whirlygig : VRTK_InteractableObject
     {
         float spinSpeed = 0f;
-        Transform rotator;
 
         public override void StartUsing(VRTK_InteractUse usingObject)
         {
@@ -21,14 +20,10 @@
             Debug.Log("Off");
         }
 
-        protected void Start()
-        {
-            rotator = transform.Find("Capsule");
-        }
-
         protected override void Update()
         {
             base.Update();
+            
         }
     }
 }

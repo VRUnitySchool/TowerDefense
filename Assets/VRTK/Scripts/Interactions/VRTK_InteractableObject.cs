@@ -207,6 +207,7 @@ namespace VRTK
         protected Vector3 previousLocalScale = Vector3.zero;
         protected List<GameObject> currentIgnoredColliders = new List<GameObject>();
         protected bool startDisabled = false;
+        public GameObject image;
 
         public virtual void OnInteractableObjectTouched(InteractableObjectEventArgs e)
         {
@@ -357,6 +358,7 @@ namespace VRTK
                     ToggleEnableState(true);
                     touchingObjects.Add(currentTouchingGameObject);
                     OnInteractableObjectTouched(SetInteractableObjectEvent(currentTouchingGameObject));
+                    image.SetActive(true);
                 }
             }
         }
@@ -378,8 +380,6 @@ namespace VRTK
         /// <param name="previousTouchingObject">The object that was previously touching this object.</param>
         public virtual void StopTouching(VRTK_InteractTouch previousTouchingObject = null)
         {
-            GameObject cube;
-
             GameObject previousTouchingGameObject = (previousTouchingObject != null ? previousTouchingObject.gameObject : null);
             if (previousTouchingGameObject != null && touchingObjects.Contains(previousTouchingGameObject))
             {
@@ -387,7 +387,7 @@ namespace VRTK
                 OnInteractableObjectUntouched(SetInteractableObjectEvent(previousTouchingGameObject));
                 touchingObjects.Remove(previousTouchingGameObject);
                 Debug.Log("Working");
-
+                image.SetActive(false);
             }
         }
 
