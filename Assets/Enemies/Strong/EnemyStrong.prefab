@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 23342347240542702}
   - component: {fileID: 114137884327403036}
   - component: {fileID: 114036752215040172}
+  - component: {fileID: 135190269900050868}
   m_Layer: 0
   m_Name: EnemyStrong
   m_TagString: Enemy
@@ -257,6 +258,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!135 &135190269900050868
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1697560615202494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!222 &222077314407396076
 CanvasRenderer:
   m_ObjectHideFlags: 1
