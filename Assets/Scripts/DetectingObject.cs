@@ -12,7 +12,7 @@ public class DetectingObject : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "EnemyFast(Clone)")
+        if (col.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit");
             Destroy(col.gameObject);
@@ -23,7 +23,6 @@ public class DetectingObject : MonoBehaviour {
     void HitTarget()
     {
         Damage(target);
-
         Destroy(gameObject);
     }
 

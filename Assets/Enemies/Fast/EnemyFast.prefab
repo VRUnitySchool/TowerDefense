@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114137884327403036}
   - component: {fileID: 114036752215040172}
   - component: {fileID: 135370067664083778}
+  - component: {fileID: 54375752512147430}
   m_Layer: 0
   m_Name: EnemyFast
   m_TagString: Enemy
@@ -139,6 +140,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697560615202494}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54375752512147430
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1697560615202494}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &114036752215040172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,7 +281,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697560615202494}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
