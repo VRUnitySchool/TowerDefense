@@ -7,6 +7,8 @@ public class Node : MonoBehaviour {
     private GameObject turret;
     public bool triggerPressed;
 
+    BuildManager buildManager;
+
     private void Start()
     {
         if (GetComponent<VRTK_ControllerEvents>() == null)
@@ -16,6 +18,7 @@ public class Node : MonoBehaviour {
         }
 
         GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerPressed);
+        buildManager = BuildManager.instance;
     }
 
     private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
@@ -25,13 +28,17 @@ public class Node : MonoBehaviour {
 
     void OnMouseDown()
     {
+        //This is what i had to do to make the shop work
+        if (buildManager.GetTurretToBuild() == null)
+            return;
+
         if (turret != null)
         {
             Debug.Log("Can't Build There");
             return;
         }
 
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+        GameObject turretToBuild = buildManager.GetTurretToBuild();
         turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
     }
 }
