@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4264737843743596}
   - component: {fileID: 33193652856112246}
   - component: {fileID: 23428252724435490}
-  - component: {fileID: 135412991600250390}
   - component: {fileID: 114579310442027074}
   - component: {fileID: 54660329275982274}
   m_Layer: 0
@@ -85,7 +84,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288955387721888}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300002, guid: 56377e28a47008245871ca7b435044c4, type: 3}
 --- !u!54 &54660329275982274
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -113,15 +112,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
---- !u!135 &135412991600250390
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288955387721888}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}

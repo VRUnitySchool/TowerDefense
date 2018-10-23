@@ -12,7 +12,7 @@ public class DetectingObject : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.gameObject.name == "EnemyStrong(Clone)")
         {
             Debug.Log("Hit");
             Destroy(col.gameObject);
