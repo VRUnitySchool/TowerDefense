@@ -160,7 +160,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1620791145090396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: -19}
+  m_LocalPosition: {x: 15, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4931335875183776}
@@ -341,8 +341,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b5640ff9b469cf243adf45354a0ce417, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -403,6 +403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37337665f8b36914d90311b6487ff0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
+    cost: 0
 --- !u!114 &114507408081286368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -699,7 +702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.35, y: 0.66}
+  m_AnchoredPosition: {x: 0.7925, y: 0.278}
   m_SizeDelta: {x: 0.2, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224381067213633404
@@ -775,8 +778,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.053, y: 0.236}
-  m_SizeDelta: {x: 1.361, y: 1}
+  m_AnchoredPosition: {x: 0.00000062584877, y: 0.378}
+  m_SizeDelta: {x: 0.785, y: 0.756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224900444397462558
 RectTransform:

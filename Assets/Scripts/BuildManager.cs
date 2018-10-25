@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-public class BuildManager : MonoBehaviour {
+public class BuildManager : MonoBehaviour
+{
 
     public static BuildManager instance;
 
     void Awake()
     {
-
         if (instance != null)
         {
-            Debug.LogError("More than one BuildManager in scene");
+            Debug.LogError("More than one BuildManager in scene!");
             return;
         }
         instance = this;
@@ -17,21 +17,19 @@ public class BuildManager : MonoBehaviour {
 
     public GameObject standardTurretPrefab;
 
-    void Start()
+    private TurretBlueprint turretToBuild;
+
+    public bool CanBuild { get { return turretToBuild != null; } }
+
+    public void BuildTurretOn (Node node)
     {
-        turretToBuild = standardTurretPrefab;
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
     }
-
-    private GameObject turretToBuild;
-
-    public GameObject GetTurretToBuild()
+    
+    public void SelectTurretToBuild(TurretBlueprint turret)
     {
-        return turretToBuild;
-    }
-
-    public void SetTurretToBuild(GameObject turret)
-    {
-
+        turretToBuild = turret;
     }
 
 }
