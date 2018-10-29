@@ -3,6 +3,7 @@
 public class Shop : MonoBehaviour {
 
     public TurretBlueprint standardTurret;
+    public GameObject image;
 
     BuildManager buildManager;
 
@@ -19,7 +20,7 @@ public class Shop : MonoBehaviour {
 
     public void Close()
     {
-        Destroy(gameObject);
+        image.SetActive(false);
     }
 
 }
