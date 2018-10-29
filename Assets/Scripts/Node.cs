@@ -15,14 +15,20 @@ public class Node : MonoBehaviour {
     {
         return transform.position + positionOffset;
     }
-    
+
+    void Start()
+    {
+        buildManager = BuildManager.instance;
+    }
+
 
     private void Update()
     {
-        if(VRTK_Controllerevents.triggerClicked == true)
+        /*if(VRTK_Controllerevents.triggerClicked == true)
         {
             Debug.Log("Trigger");
         }
+        */
     }
 
 

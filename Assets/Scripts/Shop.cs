@@ -2,7 +2,10 @@
 
 public class Shop : MonoBehaviour {
 
+    public Vector3 positionOffset;
     public TurretBlueprint standardTurret;
+    public GameObject node;
+    public GameObject turret;
 
     BuildManager buildManager;
 
@@ -13,8 +16,11 @@ public class Shop : MonoBehaviour {
 
     public void PurchaseStandardTurret ()
     {
+        
         Debug.Log("Select Turret Selected");
         buildManager.SelectTurretToBuild(standardTurret);
+        Instantiate(turret, node.transform.position + positionOffset, Quaternion.identity);
+        
     }
 
     public void Close()

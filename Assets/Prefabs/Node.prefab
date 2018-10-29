@@ -160,7 +160,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1620791145090396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -25}
+  m_LocalPosition: {x: 3, y: 0, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4931335875183776}
@@ -403,9 +403,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37337665f8b36914d90311b6487ff0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionOffset: {x: -1.5, y: 0.074, z: -1.5}
   standardTurret:
     prefab: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
     cost: 0
+  node: {fileID: 1620791145090396}
+  turret: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
 --- !u!114 &114507408081286368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -597,7 +600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOffset: {x: -1.5, y: 0.074, z: -1.5}
-  triggerPressed: 0
+  VRTK_Controllerevents: {fileID: 0}
+  turret: {fileID: 0}
 --- !u!114 &114994442881123624
 MonoBehaviour:
   m_ObjectHideFlags: 1

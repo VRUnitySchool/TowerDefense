@@ -5256,6 +5256,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114028138418403524, guid: d449d4a7b7f6f0949bf223091ffa936d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114028138418403524, guid: d449d4a7b7f6f0949bf223091ffa936d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Node, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d449d4a7b7f6f0949bf223091ffa936d, type: 2}
   m_IsPrefabAsset: 0
@@ -10654,6 +10664,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 224505916427941294, guid: d449d4a7b7f6f0949bf223091ffa936d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00000059604645
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d449d4a7b7f6f0949bf223091ffa936d, type: 2}
   m_IsPrefabAsset: 0
@@ -12367,6 +12382,11 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224505916427941294, guid: d449d4a7b7f6f0949bf223091ffa936d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000006556511
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d449d4a7b7f6f0949bf223091ffa936d, type: 2}
@@ -18620,7 +18640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6e7f0a95a26224ca4cec6ad26ee7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLives: 20
+  startMoney: 1000
 --- !u!1001 &1940278883
 Prefab:
   m_ObjectHideFlags: 0
