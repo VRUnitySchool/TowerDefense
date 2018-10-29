@@ -4,7 +4,7 @@ using VRTK;
 public class Node : MonoBehaviour {
 
     public Vector3 positionOffset;
-   
+    public VRTK_ControllerEvents VRTK_Controllerevents;
 
     [Header("Optional")]
     public GameObject turret;
@@ -15,7 +15,6 @@ public class Node : MonoBehaviour {
     {
         return transform.position + positionOffset;
     }
-<<<<<<< HEAD
 
     void Start()
     {
@@ -31,10 +30,6 @@ public class Node : MonoBehaviour {
         }
         */
     }
-=======
-    
-    
->>>>>>> eae2c53710aba030cf847b356f78adae6b65e3a5
 
 
     void OnMouseDown()

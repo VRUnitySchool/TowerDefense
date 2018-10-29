@@ -4,12 +4,8 @@ public class Shop : MonoBehaviour {
 
     public Vector3 positionOffset;
     public TurretBlueprint standardTurret;
-<<<<<<< HEAD
     public GameObject node;
     public GameObject turret;
-=======
-    public GameObject image;
->>>>>>> eae2c53710aba030cf847b356f78adae6b65e3a5
 
     BuildManager buildManager;
 
@@ -29,7 +25,7 @@ public class Shop : MonoBehaviour {
 
     public void Close()
     {
-        image.SetActive(false);
+        Destroy(gameObject);
     }
 
 }
