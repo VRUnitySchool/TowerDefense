@@ -6,6 +6,7 @@ public class Shop : MonoBehaviour {
     public TurretBlueprint standardTurret;
     public GameObject node;
     public GameObject turret;
+    public GameObject image;
 
     BuildManager buildManager;
 
@@ -20,12 +21,14 @@ public class Shop : MonoBehaviour {
         Debug.Log("Select Turret Selected");
         buildManager.SelectTurretToBuild(standardTurret);
         Instantiate(turret, node.transform.position + positionOffset, Quaternion.identity);
+        image.SetActive(false);
         
     }
 
     public void Close()
     {
-        Destroy(gameObject);
+        image.SetActive(false);
+        Debug.Log("FunTimes");
     }
 
 }
