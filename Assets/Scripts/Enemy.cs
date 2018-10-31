@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour {
     public int startHealth = 100;
     private float health;
 
+    public int value = 50;
+
     public GameObject deathEffect;
 
     [Header("Unity Stuff")]
@@ -40,6 +42,8 @@ public class Enemy : MonoBehaviour {
         Destroy(effect, 2f);
 
         WaveSpawner.EnemiesAlive--;
+
+        PlayerStats.Money += value;
 
         Destroy(gameObject);
     }
