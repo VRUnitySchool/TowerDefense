@@ -18837,7 +18837,7 @@ MonoBehaviour:
     count: 20
     rate: 2
   spawnPoint: {fileID: 1051876868}
-  timeBetweenWaves: 6
+  timeBetweenWaves: 7
   waveCountdownText: {fileID: 570117405}
 --- !u!114 &1936394092
 MonoBehaviour:
