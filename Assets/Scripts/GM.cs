@@ -1,23 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour
+public class GM : MonoBehaviour
 {
-
     private bool gameEnded = false;
 
-    void Update()
+    private void Update()
     {
         if (gameEnded)
             return;
 
-        if (PlayerStats.Lives <= 0)
+        if (PlayerStats.Lives <=0)
         {
             EndGame();
         }
     }
 
-    void EndGame()
+    void EndGame ()
     {
         gameEnded = true;
         Debug.Log("Game Over");
