@@ -35,7 +35,7 @@ public class WaveSpawner : MonoBehaviour {
 
         waveCountdownText.text = Mathf.Round(countdown).ToString();
 
-        waveCountdownText.text = string.Format("{0:00.00}", countdown);
+        waveCountdownText.text = string.Format("{0:00:00}", countdown);
     }
 
     IEnumerator SpawnWave()
