@@ -17,6 +17,8 @@ public class BuildManager : MonoBehaviour
 
     public GameObject standardTurretPrefab;
 
+    public GameObject buildEffect;
+
     private TurretBlueprint turretToBuild;
 
     public bool CanBuild { get { return turretToBuild != null; } }
@@ -35,6 +37,9 @@ public class BuildManager : MonoBehaviour
         node.turret = turret;
 
         Debug.Log("Turret Build! Money Left: " + PlayerStats.Money);
+
+        GameObject effect = Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 3f);
     }
     
     public void SelectTurretToBuild(TurretBlueprint turret)

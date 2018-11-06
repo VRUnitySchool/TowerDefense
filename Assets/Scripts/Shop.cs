@@ -21,6 +21,7 @@ public class Shop : MonoBehaviour {
         Debug.Log("Select Turret Selected");
         buildManager.SelectTurretToBuild(standardTurret);
         Instantiate(turret, node.transform.position + positionOffset, Quaternion.identity);
+
         image.SetActive(false);
         
     }
