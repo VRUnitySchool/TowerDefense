@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15870,8 +15870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chargeMax: 100
-  chargeRate: 25
-  FireButton: 344
+  FireButton: 339
   spawn: {fileID: 941334252}
   rigbArrow: {fileID: 54901580139992944, guid: a3267026584175344ab5dd821f4c2ad9, type: 2}
 --- !u!1 &1611067870
