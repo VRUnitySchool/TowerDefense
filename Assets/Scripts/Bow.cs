@@ -5,24 +5,22 @@ using UnityEngine;
 public class Bow : MonoBehaviour {
     float _charge;
     public float chargeMax;
-    public float chargeRate;
     public KeyCode FireButton;
     public Transform spawn;
     public Rigidbody rigbArrow;
 
     void Update()
     {
-        if (Input.GetKey(FireButton) && _charge < chargeMax)
-        {
-            _charge += Time.deltaTime * chargeRate;
-            Debug.Log(_charge.ToString());
-        }
+        _charge = Input.GetAxis("VRTriggerPressed1");
 
-        if (Input.GetKeyUp(FireButton))
-            {
-                Rigidbody arrow = Instantiate(rigbArrow, spawn.position, Quaternion.identity) as Rigidbody;
-                arrow.AddForce(spawn.forward * _charge, ForceMode.Impulse);
+        if (Input.GetAxis("VRTriggerPressed") == 1){
+            Rigidbody arrow = Instantiate(rigbArrow, spawn.position, Quaternion.identity) as Rigidbody;
+            arrow.AddForce(spawn.forward * _charge * 6, ForceMode.Impulse);
             _charge = 0;
-            }
+        }
     }
+   /* private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(rigbArrow);
+    } */
 }
