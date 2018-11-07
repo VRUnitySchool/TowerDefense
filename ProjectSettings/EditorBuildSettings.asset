@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TowerDefense.unity
+    guid: cbc5304ec94d4684785fc5f8faecda8d
   m_configObjects: {}

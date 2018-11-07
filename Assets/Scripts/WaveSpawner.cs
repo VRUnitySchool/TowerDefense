@@ -48,6 +48,7 @@ public class WaveSpawner : MonoBehaviour {
             yield return new WaitForSeconds(1f / wave.rate);
         }
         waveIndex++;
+        PlayerStats.Rounds++;
 
         if (waveIndex == waves.Length)
         {
