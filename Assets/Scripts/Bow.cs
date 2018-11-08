@@ -11,16 +11,16 @@ public class Bow : MonoBehaviour {
 
     void Update()
     {
-        _charge = Input.GetAxis("VRTriggerPressed1");
 
-        if (Input.GetAxis("VRTriggerPressed") == 1){
-            Rigidbody arrow = Instantiate(rigbArrow, spawn.position, Quaternion.identity) as Rigidbody;
-            arrow.AddForce(spawn.forward * _charge * 6, ForceMode.Impulse);
+        if (Input.GetAxis("VRTriggerPressed1") == 1)
+        {
+            _charge += 1;
+        }
+
+        if (Input.GetKeyDown("VRTriggerPressed")){
+            Rigidbody arrow = Instantiate(rigbArrow, spawn.position, Quaternion.identity);
+            arrow.AddForce(spawn.forward * _charge, ForceMode.Impulse);
             _charge = 0;
         }
     }
-   /* private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(rigbArrow);
-    } */
 }
