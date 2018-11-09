@@ -36,4 +36,14 @@ public class DetectingObject : MonoBehaviour {
 
     }
 
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == ("Floor"))
+        {
+            Destroy(this.gameObject, 3);
+        }
+
+    }
+
 }
