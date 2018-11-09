@@ -16839,6 +16839,7 @@ MonoBehaviour:
   FireButton: 339
   spawn: {fileID: 941334252}
   rigbArrow: {fileID: 54901580139992944, guid: a3267026584175344ab5dd821f4c2ad9, type: 2}
+  inUse: 0
 --- !u!1 &1611067870
 GameObject:
   m_ObjectHideFlags: 0
@@ -20191,7 +20192,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3600ce6470e9c4cb7dd5a0ac32f527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waves: []
+  waves:
+  - enemy: {fileID: 1697560615202494, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+    count: 7
+    rate: 2
+  - enemy: {fileID: 1697560615202494, guid: e939da006a3dc1e4a95fe0ae575e6913, type: 2}
+    count: 9
+    rate: 2
+  - enemy: {fileID: 1697560615202494, guid: e939da006a3dc1e4a95fe0ae575e6913, type: 2}
+    count: 12
+    rate: 2
   spawnPoint: {fileID: 1051876868}
   timeBetweenWaves: 7
   waveCountdownText: {fileID: 570117405}
