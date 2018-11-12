@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     public float speed = 10f;
 
     public int startHealth = 100;
-    private float health;
+    public float health;
 
     public int value = 50;
 

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 136403519914883344}
   m_Layer: 0
   m_Name: Ammo
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb848d21c67f54d41b2340f98290e604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
 --- !u!136 &136403519914883344
 CapsuleCollider:
   m_ObjectHideFlags: 1

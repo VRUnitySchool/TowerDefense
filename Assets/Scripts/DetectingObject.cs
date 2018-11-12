@@ -2,41 +2,34 @@
 
 public class DetectingObject : MonoBehaviour {
 
-    private Transform target;
-    public int damage = 50;
+    private Enemy enemy;
 
-    public void Seek (Transform _target)
+    private void Start()
     {
-        target = _target;
+        enemy = GetComponent<Enemy>();
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.gameObject.name == "EnemyFast(Clone)")
         {
             Debug.Log("Hit");
-            Destroy(col.gameObject);
+            enemy.health -= 90;
         }
-
-    }
-
-    void HitTarget()
-    {
-        Damage(target);
-        Destroy(gameObject);
-    }
-
-    void Damage(Transform enemy)
-    {
-        Enemy e = enemy.GetComponent<Enemy>();
-        if (e != null)
+        else if (col.gameObject.name == "EnemyNormal(Clone)")
         {
-            e.TakeDamage(damage);
+            Debug.Log("Hit");
+            enemy.health -= 90;
+        }
+        else if (col.gameObject.name == "EnemyStrong(Clone)")
+        {
+            Debug.Log("Hit");
+            enemy.health -= 90;
         }
 
     }
 
-
+ 
     private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == ("Floor"))
