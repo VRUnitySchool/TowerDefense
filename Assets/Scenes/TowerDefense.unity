@@ -16857,7 +16857,8 @@ MonoBehaviour:
   chargeMax: 100
   FireButton: 339
   spawn: {fileID: 941334252}
-  AmmoPrefab: {fileID: 0}
+  AmmoPrefab: {fileID: 54901580139992944, guid: a3267026584175344ab5dd821f4c2ad9,
+    type: 2}
   inUse: 0
 --- !u!1 &1611067870
 GameObject:
