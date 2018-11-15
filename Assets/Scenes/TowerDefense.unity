@@ -2541,6 +2541,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 817a48500c637da4f80fbeb7aacbbf2d, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1001 &265756854
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -23.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668398419970816, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &269679245
 GameObject:
   m_ObjectHideFlags: 0
@@ -15058,13 +15100,13 @@ MonoBehaviour:
   gameObjectToFollow: {fileID: 1372088689}
   gameObjectToChange: {fileID: 1965853619}
   followsPosition: 1
-  smoothsPosition: 0
+  smoothsPosition: 1
   maxAllowedPerFrameDistanceDifference: 0.003
-  followsRotation: 0
-  smoothsRotation: 0
+  followsRotation: 1
+  smoothsRotation: 1
   maxAllowedPerFrameAngleDifference: 1.5
   followsScale: 1
-  smoothsScale: 0
+  smoothsScale: 1
   maxAllowedPerFrameSizeDifference: 0.003
   _moment: 2
 --- !u!114 &1372088692
@@ -16873,13 +16915,13 @@ MonoBehaviour:
   gameObjectToFollow: {fileID: 1499098120}
   gameObjectToChange: {fileID: 1690595774}
   followsPosition: 1
-  smoothsPosition: 0
+  smoothsPosition: 1
   maxAllowedPerFrameDistanceDifference: 0.003
-  followsRotation: 1
+  followsRotation: 0
   smoothsRotation: 0
   maxAllowedPerFrameAngleDifference: 1.5
   followsScale: 1
-  smoothsScale: 0
+  smoothsScale: 1
   maxAllowedPerFrameSizeDifference: 0.003
   _moment: 2
 --- !u!114 &1499098123
@@ -22416,13 +22458,13 @@ MonoBehaviour:
   gameObjectToFollow: {fileID: 2042093647}
   gameObjectToChange: {fileID: 1125334560}
   followsPosition: 1
-  smoothsPosition: 0
+  smoothsPosition: 1
   maxAllowedPerFrameDistanceDifference: 0.003
   followsRotation: 1
-  smoothsRotation: 0
+  smoothsRotation: 1
   maxAllowedPerFrameAngleDifference: 1.5
   followsScale: 1
-  smoothsScale: 0
+  smoothsScale: 1
   maxAllowedPerFrameSizeDifference: 0.003
   _moment: 2
 --- !u!114 &2042093650
