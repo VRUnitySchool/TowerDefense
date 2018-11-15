@@ -10,12 +10,14 @@ public class DetectingObject : MonoBehaviour {
             Debug.Log("Hit");
             Damage(col.transform);
         }
-        else if (col.gameObject.name == "EnemyNormal(Clone)")
+
+        if (col.gameObject.name == "EnemyNormal(Clone)")
         {
             Debug.Log("Hit");
             Damage(col.transform);
         }
-        else if (col.gameObject.name == "EnemyStrong(Clone)")
+
+        if (col.gameObject.name == "EnemyStrong(Clone)")
         {
             Debug.Log("Hit");
             Damage(col.transform);

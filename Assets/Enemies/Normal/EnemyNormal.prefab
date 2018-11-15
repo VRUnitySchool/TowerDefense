@@ -164,6 +164,7 @@ MonoBehaviour:
   startSpeed: 3.5
   speed: 3.5
   startHealth: 100
+  health: 0
   value: 100
   deathEffect: {fileID: 1930268106982820, guid: 38ed0e0e8d8493b418d5646034b60e53,
     type: 2}
@@ -266,7 +267,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697560615202494}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
