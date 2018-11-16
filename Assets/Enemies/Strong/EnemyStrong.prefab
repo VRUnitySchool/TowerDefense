@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 223239052544975912}
   - component: {fileID: 114925996304334996}
   - component: {fileID: 114287054713844914}
+  - component: {fileID: 114911139931045154}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -164,6 +165,7 @@ MonoBehaviour:
   startSpeed: 2
   speed: 3.5
   startHealth: 250
+  health: 0
   value: 150
   deathEffect: {fileID: 1930268106982820, guid: 12aec37fe6a8e6746b8a2df08ccf2ca3,
     type: 2}
@@ -238,6 +240,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114911139931045154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1914980743197634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 0}
 --- !u!114 &114925996304334996
 MonoBehaviour:
   m_ObjectHideFlags: 1
