@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114036752215040172}
   - component: {fileID: 135370067664083778}
   - component: {fileID: 54375752512147430}
+  - component: {fileID: 114246844104835112}
   m_Layer: 0
   m_Name: EnemyFast
   m_TagString: Enemy
@@ -213,6 +214,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 1
+--- !u!114 &114246844104835112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1697560615202494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 2008320, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
 --- !u!114 &114287054713844914
 MonoBehaviour:
   m_ObjectHideFlags: 1
