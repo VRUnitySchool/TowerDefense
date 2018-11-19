@@ -18,7 +18,7 @@ public class Bow : MonoBehaviour {
        if (Input.GetAxis("VRTriggerPressed") != 1)
         {
             _charge += Input.GetAxis("VRTriggerPressed");
-            load.fillAmount += _charge;
+            load.fillAmount = _charge;
         }
 
         if (Input.GetAxis("VRTriggerPressed") == 1)

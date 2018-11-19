@@ -21088,7 +21088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 1697560615202494, guid: e939da006a3dc1e4a95fe0ae575e6913, type: 2}
+  - enemy: {fileID: 1697560615202494, guid: 22912635d276aff46bd8c31ae28e10e6, type: 2}
     count: 7
     rate: 2
   - enemy: {fileID: 1697560615202494, guid: e939da006a3dc1e4a95fe0ae575e6913, type: 2}
