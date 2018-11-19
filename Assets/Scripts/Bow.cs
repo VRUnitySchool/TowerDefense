@@ -10,15 +10,20 @@ public class Bow : MonoBehaviour {
     public Transform spawn;
     public Rigidbody AmmoPrefab;
     public bool inUse;
-    public Image load;
+    public Slider load;
 
     void Update()
     {
     
        if (Input.GetAxis("VRTriggerPressed") != 1)
         {
-            _charge += Input.GetAxis("VRTriggerPressed");
-            load.fillAmount = _charge;
+            _charge += Input.GetAxis("VRTriggerPressed")/7;
+            load.value += _charge;
+            if (Input.GetAxis("VRTriggerPressed") == 0 || Input.GetAxis("VRTriggerPressed") == 1)
+            {
+                _charge = 0;
+                load.value = 0;
+            }
         }
 
         if (Input.GetAxis("VRTriggerPressed") == 1)
@@ -27,7 +32,7 @@ public class Bow : MonoBehaviour {
              {
                  Rigidbody arrow = Instantiate(AmmoPrefab, spawn.position, transform.rotation) as Rigidbody;
                 arrow.AddForce(spawn.forward * _charge, ForceMode.Impulse);
-                 _charge = 0;
+                _charge = 0;
                  inUse = true;
              }
          }
