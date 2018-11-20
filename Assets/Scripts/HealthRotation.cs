@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class HealthRotation : MonoBehaviour {
 
-    public Camera MyCamera;
-
     private void Update()
     {
         Camera MyCamera = Camera.main;
