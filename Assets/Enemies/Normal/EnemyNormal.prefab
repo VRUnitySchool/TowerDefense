@@ -60,7 +60,6 @@ GameObject:
   - component: {fileID: 223239052544975912}
   - component: {fileID: 114925996304334996}
   - component: {fileID: 114287054713844914}
-  - component: {fileID: 114858721919266628}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -91,8 +90,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697560615202494}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.25, y: 1.425, z: -35.25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 0.95, z: -23.5}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 224601730597654412}
@@ -225,7 +224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCamera: {fileID: 20923356154064420, guid: 8512a1ba574be294b8f1c62b6aa1edb3, type: 2}
 --- !u!114 &114724305131412688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -253,18 +251,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114858721919266628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1914980743197634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myCamera: {fileID: 2008320, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
 --- !u!114 &114925996304334996
 MonoBehaviour:
   m_ObjectHideFlags: 1
