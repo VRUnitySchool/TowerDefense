@@ -113,9 +113,10 @@ GameObject:
   - component: {fileID: 114941873134280848}
   - component: {fileID: 114840279111492918}
   - component: {fileID: 114611609153322374}
+  - component: {fileID: 114203392666175516}
   m_Layer: 0
   m_Name: Node
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +240,17 @@ MonoBehaviour:
   node: {fileID: 1620791145090396}
   turret: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
   image: {fileID: 1275331309005044}
+--- !u!114 &114203392666175516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620791145090396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114260503858069348
 MonoBehaviour:
   m_ObjectHideFlags: 1
