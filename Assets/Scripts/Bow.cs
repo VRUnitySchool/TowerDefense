@@ -11,24 +11,14 @@ public class Bow : MonoBehaviour {
     public Rigidbody AmmoPrefab;
     public bool inUse;
     public Slider load;
-    [SerializeField]
-    private float overTime;
-
-    private void Start()
-    {
-        load.maxValue = chargeMax;
-    }
 
     void Update()
     {
 
-        if (Input.GetAxis("VRTriggerPressed") != 1)
+        if (Input.GetAxis("VRTriggerPressed") != 1 && _charge <= chargeMax)
         {
-            if (_charge <= chargeMax)
-            {
-            _charge += overTime;
-            load.value = _charge;
-            }
+            _charge += Input.GetAxis("VRTriggerPressed")/7;
+            load.value += _charge;
             if (Input.GetAxis("VRTriggerPressed") == 0)
             {
                 _charge = 0;
