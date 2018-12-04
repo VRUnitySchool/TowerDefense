@@ -12,13 +12,18 @@ public class Bow : MonoBehaviour {
     public bool inUse;
     public Slider load;
 
+    private void Start()
+    {
+        load.maxValue = chargeMax;
+    }
+
     void Update()
     {
 
         if (Input.GetAxis("VRTriggerPressed") != 1 && _charge <= chargeMax)
         {
             _charge += Input.GetAxis("VRTriggerPressed")/7;
-            load.value += _charge;
+            load.value = _charge;
             if (Input.GetAxis("VRTriggerPressed") == 0)
             {
                 _charge = 0;
