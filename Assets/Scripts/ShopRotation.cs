@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthRotation : MonoBehaviour
+public class ShopRotation : MonoBehaviour
 {
     float lockPos = 0;
 
