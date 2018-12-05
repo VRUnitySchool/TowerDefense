@@ -8,7 +8,7 @@ public class HealthRotation : MonoBehaviour
     private void Update()
     {
         Camera MyCamera = Camera.main;
-        transform.LookAt(transform.position + MyCamera.transform.rotation * Vector3.back, MyCamera.transform.rotation * Vector3.up);
+        transform.LookAt(transform.position + MyCamera.transform.rotation * Vector3.back);
     }
 }
 
