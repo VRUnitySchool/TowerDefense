@@ -59,9 +59,9 @@ GameObject:
   - component: {fileID: 114877566636246506}
   - component: {fileID: 114850923130125628}
   - component: {fileID: 114655677790114072}
-  - component: {fileID: 114382012991238378}
+  - component: {fileID: 114364727401908594}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ShopCanvas
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1620791145090396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: -1}
+  m_LocalPosition: {x: 6, y: 0, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4931335875183776}
@@ -240,6 +240,8 @@ MonoBehaviour:
   node: {fileID: 1620791145090396}
   turret: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
   image: {fileID: 1275331309005044}
+  buildEffect: {fileID: 1840545040083012, guid: 016963df458879045b4860ba74423e22,
+    type: 2}
 --- !u!114 &114260503858069348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -319,7 +321,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114382012991238378
+--- !u!114 &114364727401908594
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -327,7 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1275331309005044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ee77aaba6bc454d9e7050d54b86d0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ea42292eaf774e4da83e062b2c49618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114523729146047056
@@ -713,7 +715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.5, y: 2.171}
+  m_AnchoredPosition: {x: -1.5, y: 1.5}
   m_SizeDelta: {x: 1.5, y: 0.7513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224431561730325316
