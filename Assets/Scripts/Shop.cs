@@ -34,7 +34,6 @@ public class Shop : MonoBehaviour {
     public void Close()
     {
         image.SetActive(false);
-        Debug.Log("FunTimes");
     }
 
 }
