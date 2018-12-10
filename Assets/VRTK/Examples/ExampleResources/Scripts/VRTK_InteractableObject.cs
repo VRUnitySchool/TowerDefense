@@ -386,7 +386,6 @@ namespace VRTK
                 ResetUseState(previousTouchingGameObject);
                 OnInteractableObjectUntouched(SetInteractableObjectEvent(previousTouchingGameObject));
                 touchingObjects.Remove(previousTouchingGameObject);
-                Debug.Log("Working");
             }
         }
 
