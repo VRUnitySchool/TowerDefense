@@ -13,9 +13,18 @@ public class SituationReport : MonoBehaviour {
 
     private void Update()
     {
-        if (!cubeRenderer.isVisible)
+        StartCoroutine(checkVisible());
+
+
+    }
+
+    IEnumerator checkVisible()
+    {
+        yield return new WaitForSeconds(1);
+    if (!cubeRenderer.isVisible)
         {
-            Debug.Log("NotVisible");
+            Welcome.enabled = false;
+            tryThrowing.enabled = true;
         }
     }
 
