@@ -8,7 +8,7 @@ public class SetCameraPosition : MonoBehaviour {
     [SerializeField]
     private Camera headsetCamera;
 
-	void Update ()
+	void Start ()
     {
         headsetCamera.transform.LookAt(cube);
         Debug.Log("Set");
