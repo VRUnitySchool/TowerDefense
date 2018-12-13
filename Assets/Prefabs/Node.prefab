@@ -234,14 +234,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionOffset: {x: -1.5, y: 0.074, z: -1.5}
-  standardTurret:
-    prefab: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
-    cost: 0
   node: {fileID: 1620791145090396}
-  turret: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
   image: {fileID: 1275331309005044}
   buildEffect: {fileID: 1840545040083012, guid: 016963df458879045b4860ba74423e22,
     type: 2}
+  isUpgraded: 0
+  standardTurret:
+    prefab: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+    upgradedPrefab2: {fileID: 0}
+    upgradeCost2: 0
+  upgradeCost: {fileID: 0}
+  upgradeButton: {fileID: 0}
+  turretBlueprint:
+    prefab: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
+    cost: 0
+    upgradedPrefab: {fileID: 1328155293668260, guid: e618e04cb96b9b04abbe016f8b346640,
+      type: 2}
+    upgradeCost: 0
+    upgradedPrefab2: {fileID: 1006020122383274, guid: 5e50c3374fd1e9647b00549a8bdd4403,
+      type: 2}
+    upgradeCost2: 0
+  turret: {fileID: 1218494663142226, guid: de2057f8ade917146be09b8c48e3a4eb, type: 2}
 --- !u!114 &114260503858069348
 MonoBehaviour:
   m_ObjectHideFlags: 1
