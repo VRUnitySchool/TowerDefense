@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turret: {fileID: 1006020122383274}
-  value: 75
+  value: 175
 --- !u!114 &114741106424592654
 MonoBehaviour:
   m_ObjectHideFlags: 1
