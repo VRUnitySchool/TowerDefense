@@ -110,6 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4636821263148764}
   - component: {fileID: 114460551281868848}
+  - component: {fileID: 114308274056946988}
   m_Layer: 0
   m_Name: StandardTurretUpgraded
   m_TagString: Untagged
@@ -1046,6 +1047,29 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114308274056946988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1328155293668260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57254bbaa9ab86640b035a057f4e60c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 1250910055410888}
+  upgradeCost: {fileID: 114677509109851634}
+  upgradeButton: {fileID: 114691470378229444}
+  turretBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 1328155293668260}
+    upgradeCost: 0
+    upgradedPrefab2: {fileID: 0}
+    upgradeCost2: 0
+  node: {fileID: 0}
+  isUpgraded: 0
 --- !u!114 &114394917682101712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1232,6 +1256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: {fileID: 1328155293668260}
   value: 150
+  UI: {fileID: 0}
+  sellText: {fileID: 0}
 --- !u!114 &114925074792520366
 MonoBehaviour:
   m_ObjectHideFlags: 1

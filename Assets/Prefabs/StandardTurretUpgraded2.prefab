@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4096971441229306}
   - component: {fileID: 114632998606453268}
+  - component: {fileID: 114880536934787336}
   m_Layer: 0
   m_Name: StandardTurretUpgraded2
   m_TagString: Untagged
@@ -115,7 +116,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1495575564002404
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -299,7 +300,6 @@ Transform:
   - {fileID: 4401450715654540}
   - {fileID: 4528369160663174}
   - {fileID: 4851388115700058}
-  - {fileID: 224382054607293370}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -437,7 +437,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.65, z: -1.02}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.05}
-  m_Children: []
+  m_Children:
+  - {fileID: 224382054607293370}
   m_Father: {fileID: 4096971441229306}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -957,7 +958,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114779849704604202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114880536934787336}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114286441314902844
@@ -1046,6 +1058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: {fileID: 1006020122383274}
   value: 175
+  UI: {fileID: 0}
+  sellText: {fileID: 0}
 --- !u!114 &114779849704604202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1073,6 +1087,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114880536934787336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1006020122383274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a956e4b231d7dba468de771a0676412f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret: {fileID: 1006020122383274}
+  value: 75
+  UI: {fileID: 1495575564002404}
+  sellText: {fileID: 114620918121007706}
 --- !u!136 &136524848229971796
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1158,16 +1187,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495575564002404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.0499992}
-  m_LocalScale: {x: 0.00027130812, y: 0.00041515002, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5999851}
+  m_LocalScale: {x: 0.0013565406, y: 0.0020757501, z: 20}
   m_Children:
   - {fileID: 224506036737239756}
-  m_Father: {fileID: 4096971441229306}
-  m_RootOrder: 3
+  m_Father: {fileID: 4851388115700058}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.005, y: 0.649}
+  m_AnchoredPosition: {x: 0.024999976, y: -0.0049999356}
   m_SizeDelta: {x: 676, y: 478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224506036737239756
