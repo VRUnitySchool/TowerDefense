@@ -61,23 +61,7 @@ public class Shop : MonoBehaviour {
         image.SetActive(false);
     }
 
-    public void UpgradeTurret()
-    {
-        if (PlayerStats.Money < turretBlueprint.upgradeCost)
-        {
-            Debug.Log("Not enough money to upgrade that!");
-            return;
-        }
-        PlayerStats.Money -= turretBlueprint.upgradeCost;
-
-        //Get rid of the old turret
-        Destroy(turret);
-        
-
-        isUpgraded = true;
-
-        Debug.Log("Turret upgraded!");
-    }
+    
 
     public void UpgradeTurretAgain()
     {
